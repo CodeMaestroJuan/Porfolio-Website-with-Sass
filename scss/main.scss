@@ -140,7 +140,7 @@ img {
   &-c {
     .process {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);!
+      grid-template-columns: repeat(4, 1fr);
       grid-gap: 1.5rem;
       text-align: center;
 
@@ -168,6 +168,17 @@ img {
         text-align: center;
         position: relative;
         transition: all 1s;
+
+        &:hover {
+          background: $main-color;
+          width: 90px;
+          height: 90px;
+          line-height: 90px;
+
+          .process-step {
+            background: $dark-color;
+          }
+        }
       }
     }
   }
